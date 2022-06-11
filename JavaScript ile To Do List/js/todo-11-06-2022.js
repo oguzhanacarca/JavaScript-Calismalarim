@@ -34,10 +34,8 @@ function check() {
   this.classList.toggle("checked"); // css'deki toDoList'imizi check etme olayını kullanıyoruz
 }
 
-
-// silmeye en alttan başlarsanız fena olmaz :D
 function removeButton() {    
-    taskArray.pop(this.parentElement.remove()+1); // maddeyi silmek için parentElement.remove classını kullandık.
+    taskArray.pop(this.parentElement.remove()+1); // maddeyi silmek için parentElement.remo ve classını kullandık.
     localStorage.setItem("toDoList", JSON.stringify(taskArray)); // silinen gitsin ve eskisi kalsın.
     $(".delete").toast("show"); // maddeyi silmek için X e tıklarsan bildirim çıkacak ekranda
 }
